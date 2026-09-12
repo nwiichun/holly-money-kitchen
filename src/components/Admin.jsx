@@ -144,7 +144,7 @@ const Admin = () => {
                     </div>
                   </div>
                   {res.requests && (
-                    <p className="text-gray-300 text-sm mt-4"
+                    <p className="text-gray-300 text-sm mt-4">
                       <strong>Special Requests:</strong> {res.requests}
                     </p>
                   )}
