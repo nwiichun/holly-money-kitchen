@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply dark;
+}
+
+/* Smooth transitions */
+@layer components {
+  .transition-smooth {
+    @apply transition duration-300 ease-in-out;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-white font-semibold transition-smooth;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-white font-semibold transition-smooth;
+  }
+
+  .badge-status {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium;
+  }
+}
